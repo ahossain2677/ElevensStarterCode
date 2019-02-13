@@ -33,7 +33,7 @@ public class Card {
      * @param cardPointValue an <code>int</code> value
      *                  containing the point value of the card
      */
-    public Card(String cardRank, String cardSuit, int cardPointValue) {
+    public Card(String cardRank, String cardSuit, int cardPointValue) {	//Constructors that represent the parameters 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
     }
 
@@ -42,7 +42,7 @@ public class Card {
      * Accesses this <code>Card's</code> suit.
      * @return this <code>Card's</code> suit.
      */
-    public String suit() {
+    public String suit() {						//Getter for Suit 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 
     }
@@ -51,7 +51,7 @@ public class Card {
      * Accesses this <code>Card's</code> rank.
      * @return this <code>Card's</code> rank.
      */
-    public String rank() {
+    public String rank() {					//Getter for Rank ie. 2 of clubs, Ace of spades(useful for face cards) 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 
     }
@@ -60,7 +60,7 @@ public class Card {
      * Accesses this <code>Card's</code> point value.
      * @return this <code>Card's</code> point value.
      */
-    public int pointValue() {
+    public int pointValue() {					//Getter for the value of the the card (could work with Rank of cards)
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 
     }
@@ -71,7 +71,7 @@ public class Card {
      *              are equal to those of the argument;
      *         false otherwise.
      */
-    public boolean matches(Card otherCard) {
+    public boolean matches(Card otherCard) {			//Compare to method to match rank and Suit 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
 
     }
