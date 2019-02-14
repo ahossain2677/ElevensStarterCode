@@ -35,9 +35,9 @@ public class Card {
      */
     public Card(String cardRank, String cardSuit, int cardPointValue) {	//Constructors that represent the parameters 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-   	this.cardRank = ;
-	this.cardSuit = ;
-	this.cardPointValue = ;
+   	this.cardRank = cardRank;
+	this.cardSuit = cardSuit;
+	this.cardPointValue = cardPointValue;
     
     }
 
@@ -48,7 +48,10 @@ public class Card {
      */
     public String suit() {						//Getter for Suit 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		String getSuit ()
+		{
+			return Suit;
+		}
     }
 
     /**
@@ -57,7 +60,10 @@ public class Card {
      */
     public String rank() {					//Getter for Rank ie. 2 of clubs, Ace of spades(useful for face cards) 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		String getRank() 
+		{
+			retrun Rank;
+		}
     }
 
     /**
@@ -66,7 +72,10 @@ public class Card {
      */
     public int pointValue() {					//Getter for the value of the the card (could work with Rank of cards)
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		Int getpointValue 
+		{
+			retrun pointValue;
+		}
     }
 
     /** Compare this card with the argument.
@@ -77,7 +86,13 @@ public class Card {
      */
     public boolean matches(Card otherCard) {			//Compare to method to match rank and Suit 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+	if(Card.getSuit = otherCard.getSuit && Card.getRank = )/////////Left off here 
+	
+	{
+	return	
+	}
+	else
+	
     }
 
     /**
