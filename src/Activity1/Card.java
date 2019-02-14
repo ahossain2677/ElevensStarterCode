@@ -35,6 +35,10 @@ public class Card {
      */
     public Card(String cardRank, String cardSuit, int cardPointValue) {	//Constructors that represent the parameters 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+   	this.cardRank = ;
+	this.cardSuit = ;
+	this.cardPointValue = ;
+    
     }
 
 
