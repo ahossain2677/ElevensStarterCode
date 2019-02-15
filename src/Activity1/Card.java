@@ -86,13 +86,14 @@ public class Card {
      */
     public boolean matches(Card otherCard) {			//Compare to method to match rank and Suit 
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-	if(Card.getSuit = otherCard.getSuit && Card.getRank = )/////////Left off here 
-	
+	if(Card.getSuit = otherCard.getSuit && Card.getRank = otherCard.getRank )/////////Left off here 
 	{
-	return	
+	return ("matches");
 	}
 	else
-	
+	{
+		return ("no match");
+	}
     }
 
     /**
@@ -108,7 +109,7 @@ public class Card {
     @Override
     public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-
+		return (Card.getRank + "of" + Card.getSuit + Card.getpointValue;
     }
 }
 
