@@ -109,7 +109,7 @@ public class Card {
     @Override
     public String toString() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
-		return (Card.getRank + "of" + Card.getSuit + Card.getpointValue;
+		return (Card.getRank + "of" + Card.getSuit +"Card Point value ="+ Card.getpointValue;
     }
 }
 
