@@ -68,6 +68,19 @@ public class Shuffler {
      */
     public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+	    
+	       		
+	    double randomDouble = Math.Random();	//Work to get a random integer
+	 	int randomInt = (int)(randomDouble *52);//
+	    
+	    List<Card>Cards = new shuffleList<Card>();//New array list, Shuffle deck arraylist
+	   
+	    while(shuffleList.length<52)	//until shuffle deck is full, keep adding cards
+	    {
+		    shuffleList.add(ArrayList.get(randomInt));//reprinting random cards from the ordered deck 
+			ArrayList.remove(randomInt);//remove added cards from original deck 
+	    }
+    }
     }
 }
 
