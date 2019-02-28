@@ -53,6 +53,14 @@ public class Shuffler {
      */
     public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+    List<Card>Cards = new pshuffleList<Card>();
+	    	int j = 1 ;
+		int k = 26;
+	    for(int x = 0;x<26;x++)
+	    {
+		pshuffleList.set(j+x,pshuffleList.get(j+x));
+		   pshuffleList.set(k+x,pshuffleList.get(j+x)); 	    
+	    }
     }
 
     /**
