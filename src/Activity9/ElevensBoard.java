@@ -54,8 +54,14 @@ public class ElevensBoard extends Board {
      *         false otherwise.
      */
     @Override
-    public boolean isLegal(List<Integer> selectedCards) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
+       public boolean isLegal(List<Integer> selectedCards) {
+        if (selectedCards.size() == 2) {
+            return containsPairSum11(selectedCards);
+        } else if (selectedCards.size() == 3) {
+            return containsJQK(selectedCards);
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -67,9 +73,9 @@ public class ElevensBoard extends Board {
      *         false otherwise.
      */
     @Override
-    public boolean anotherPlayIsPossible() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-   
+       public boolean anotherPlayIsPossible() {
+        List<Integer> cIndexes = cardIndexes();
+        return containsPairSum11(cIndexes) || containsJQK(cIndexes);
     }
 
     /**
@@ -81,7 +87,14 @@ public class ElevensBoard extends Board {
      *              contain an 11-pair; false otherwise.
      */
     private boolean containsPairSum11(List<Integer> selectedCards) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
+	for(int A=1;A<selectedCards.size();A++)
+	B=A++;
+	    int z = selectedCards.get(A).intValue();
+	    int y = selectedCards.get(B).intValue()
+	    if((cardAt(A).pointValue() + cardAt(B).pointValue() == 11))
+	    {
+	    return true;
+	    }
     }
 
     /**
@@ -93,7 +106,21 @@ public class ElevensBoard extends Board {
      *              include a jack, a queen, and a king; false otherwise.
      */
     private boolean containsJQK(List<Integer> selectedCards) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
+	{
+	for(int A=1;A<selectedCards.size();A++)
+	int B=A++;
+	int C=B++;
+	   if (cardAt(A||B||C).rank().equals("jack")) {
+                foundJack = true;
+            } else if (cardAt(A||B||C).rank().equals("queen")) {
+                foundQueen = true;
+            } else if (cardAt(A||B||C).rank().equals("king")) {
+                foundKing = true;
+            }
+        }
+        return true;
+    }
+    }	/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 	    
     }
 }
